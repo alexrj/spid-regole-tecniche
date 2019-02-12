@@ -23,20 +23,20 @@
         <md:SingleSignOnService
             Location="https://spid.identityprovider.it/Post-Post-saml2sso"
             Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"/>
-        <saml:Attribute xsi:type="xsi:string" Name="familyName"/>
-        <saml:Attribute xsi:type="xsi:string" Name="name"/>
-        <saml:Attribute xsi:type="xsi:string" Name="spidCode"/>
-        <saml:Attribute xsi:type="xsi:string" Name="fiscalNumber"/>
-        <saml:Attribute xsi:type="xsi:string" Name="gender"/>
-        <saml:Attribute xsi:type="xsi:string" Name="dateOfBirth"/>
-        <saml:Attribute xsi:type="xsi:string" Name="placeOfBirth"/>
-        <saml:Attribute xsi:type="xsi:string" Name="companyName"/>
-        <saml:Attribute xsi:type="xsi:string" Name="registeredOffice"/>
-        <saml:Attribute xsi:type="xsi:string" Name="ivaCode"/>
-        <saml:Attribute xsi:type="xsi:string" Name="idCard"/>
-        <saml:Attribute xsi:type="xsi:string" Name="mobilePhone"/>
-        <saml:Attribute xsi:type="xsi:string" Name="email"/>
-        <saml:Attribute xsi:type="xsi:string" Name="address"/>
-        <saml:Attribute xsi:type="xsi:string" Name="digitalAddress"/>
+        <saml:Attribute xsi:type="xs:string" Name="familyName"/>
+        <saml:Attribute xsi:type="xs:string" Name="name"/>
+        <saml:Attribute xsi:type="xs:string" Name="spidCode"/>
+        <saml:Attribute xsi:type="xs:string" Name="fiscalNumber"/>
+        <saml:Attribute xsi:type="xs:string" Name="gender"/>
+        <saml:Attribute xsi:type="xs:string" Name="dateOfBirth"/>
+        <saml:Attribute xsi:type="xs:string" Name="placeOfBirth"/>
+        <saml:Attribute xsi:type="xs:string" Name="companyName"/>
+        <saml:Attribute xsi:type="xs:string" Name="registeredOffice"/>
+        <saml:Attribute xsi:type="xs:string" Name="ivaCode"/>
+        <saml:Attribute xsi:type="xs:string" Name="idCard"/>
+        <saml:Attribute xsi:type="xs:string" Name="mobilePhone"/>
+        <saml:Attribute xsi:type="xs:string" Name="email"/>
+        <saml:Attribute xsi:type="xs:string" Name="address"/>
+        <saml:Attribute xsi:type="xs:string" Name="digitalAddress"/>
     </md:IDPSSODescriptor>
 </md:EntityDescriptor>

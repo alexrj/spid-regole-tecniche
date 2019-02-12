@@ -53,12 +53,12 @@
 		</saml:AuthnStatement>
 		<saml:AttributeStatement xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance">
 			<saml:Attribute Name="familyName">
-				<saml:AttributeValue xsi:type="xsi:string">
+				<saml:AttributeValue xsi:type="xs:string">
 					Rossi
 				</saml:AttributeValue>
 			</saml:Attribute>
 			<saml:Attribute Name="spidCode">
-				<saml:AttributeValue xsi:type="xsi:string">
+				<saml:AttributeValue xsi:type="xs:string">
 					ABCDEFGHILMNOPQ 
 				</saml:AttributeValue>
 			</saml:Attribute>
