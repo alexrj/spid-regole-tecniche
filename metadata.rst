@@ -60,6 +60,10 @@ Le caratteristiche dell'Identity provider sono definite attraverso metadata conf
                 * ``Name``: nome dell'attributo SPID (colonna *identificatore* della Tabella attributi SPID)
                 * ``xsi:type``: tipo dell'attributo (colonna *tipo* della Tabella attributi SPID)
 
+                .. Note::
+                L'attributo ``xsi:type`` non supera la validazione XSD e non è al momento riportati nei metadati di nessun Identity Provider.
+
+
     * Deve essere presente l'elemento ``<Signature>`` riportante la firma sui metadata. La firma deve essere prodotta secondo il profilo specificato per SAML (SAML-Metadata, cap. 3) utilizzando chiavi RSA almeno a 1024 bit e algoritmo di digest SHA-256 o superiore;
 
 .. admonition:: SI PUÒ

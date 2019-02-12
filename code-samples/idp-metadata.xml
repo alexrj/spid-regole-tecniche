@@ -23,20 +23,20 @@
         <md:SingleSignOnService
             Location="https://spid.identityprovider.it/Post-Post-saml2sso"
             Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"/>
-        <saml:Attribute xsi:type="xs:string" Name="familyName"/>
-        <saml:Attribute xsi:type="xs:string" Name="name"/>
-        <saml:Attribute xsi:type="xs:string" Name="spidCode"/>
-        <saml:Attribute xsi:type="xs:string" Name="fiscalNumber"/>
-        <saml:Attribute xsi:type="xs:string" Name="gender"/>
-        <saml:Attribute xsi:type="xs:string" Name="dateOfBirth"/>
-        <saml:Attribute xsi:type="xs:string" Name="placeOfBirth"/>
-        <saml:Attribute xsi:type="xs:string" Name="companyName"/>
-        <saml:Attribute xsi:type="xs:string" Name="registeredOffice"/>
-        <saml:Attribute xsi:type="xs:string" Name="ivaCode"/>
-        <saml:Attribute xsi:type="xs:string" Name="idCard"/>
-        <saml:Attribute xsi:type="xs:string" Name="mobilePhone"/>
-        <saml:Attribute xsi:type="xs:string" Name="email"/>
-        <saml:Attribute xsi:type="xs:string" Name="address"/>
-        <saml:Attribute xsi:type="xs:string" Name="digitalAddress"/>
+        <saml:Attribute Name="familyName"/>
+        <saml:Attribute Name="name"/>
+        <saml:Attribute Name="spidCode"/>
+        <saml:Attribute Name="fiscalNumber"/>
+        <saml:Attribute Name="gender"/>
+        <saml:Attribute Name="dateOfBirth"/>
+        <saml:Attribute Name="placeOfBirth"/>
+        <saml:Attribute Name="companyName"/>
+        <saml:Attribute Name="registeredOffice"/>
+        <saml:Attribute Name="ivaCode"/>
+        <saml:Attribute Name="idCard"/>
+        <saml:Attribute Name="mobilePhone"/>
+        <saml:Attribute Name="email"/>
+        <saml:Attribute Name="address"/>
+        <saml:Attribute Name="digitalAddress"/>
     </md:IDPSSODescriptor>
 </md:EntityDescriptor>
