@@ -149,7 +149,7 @@ Il messaggio di LogoutRequest deve seguire le specifiche SAML (cfr.[SAML-Core] s
         * l’attributo ``ID`` univoco, per esempio basato su un Universally Unique Identifier (UUID) o su una combinazione origine + timestamp (quest’ultimo generato con una precisione di almeno un millesimo di secondo per garantire l’univocità);
         * l’attributo ``Version``, che deve valere sempre ``2.0``, coerentemente con la versione della specifica SAML adottata;
         * l’attributo ``IssueInstant`` a indicare l’istante di emissione della richiesta, in formato UTC (esempio: ``2008-03-13T18:04:15.531Z``);
-        * l’attributo ``Destination``, a indicare l’indirizzo (URI reference) dell’entità (gestore delle identità o fornitori di servizi) a cui è inviata la richiesta.
+        * l’attributo ``Destination``, a indicare l’indirizzo (URI reference) dell’entità (gestore delle identità o fornitori di servizi) a cui è inviata la richiesta  in alternativa l'indirizzo URI del SingleLogoutService a cui si sta inviando la richiesta.
     
     * Nell’elemento ``<LogoutRequest>`` devono essere presenti i seguenti elementi:
     
@@ -184,7 +184,7 @@ Il messaggio di LogoutResponse deve seguire le specifiche SAML (cfr.[SAML-Core] 
         * deve essere presente l’attributo ``Version``, che deve valere sempre ``2.0``, coerentemente con la versione della specifica SAML adottata;
         * deve essere presente l’attributo ``IssueInstant`` a indicare l’istante di emissione della risposta, in formato UTC;
         * deve essere presente l’attributo ``InResponseTo``, il cui valore deve fare riferimento all’ID della richiesta a cui si risponde;
-        * deve essere presente l’attributo ``Destination``, a indicare l’indirizzo (URI reference) dell’entità (gestore delle identità o fornitori di servizi) a cui è inviata la risposta;
+        * deve essere presente l’attributo ``Destination``, a indicare l’indirizzo (URI reference) dell’entità (gestore delle identità o fornitori di servizi) a cui è inviata la risposta o in alternativa l'indirizzo URI del SingleLogoutService a cui si sta inviando la richiesta;
     
     * Nell’elemento ``<LogoutResponse>`` devono essere presenti i seguenti elementi:
     

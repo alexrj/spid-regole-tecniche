@@ -37,12 +37,7 @@ Può essere inoltrato da un Service Provider all’Identity Provider usando il b
         * l'attributo ``ID`` univoco, per esempio basato su un *Universally Unique Identifier* (UUID) o su una combinazione *origine + timestamp* (quest'ultimo generato con una precisione di almeno un millesimo di secondo per garantire l'univocità)
         * l'attributo ``Version``, che deve valere sempre ``2.0``, coerentemente con la versione della specifica SAML adottata;
         * l'attributo ``IssueInstant`` a indicare l'istante di emissione della richiesta, in formato UTC (esempio: ``2017-03-05T18:03:10.531Z``)
-        * l'attributo ``Destination``, a indicare l'indirizzo (URI reference) dell'Identity Provider a cui è inviata la richiesta, come risultante nell'attributo entityID presente nel metadata IdP dell'Identity Provider a cui viene inviata la richiesta
-        
-             .. WARNING::
-             Il valore richiesto per l'attributo ``Destination`` differisce da quanto previsto dalle specifiche SAML.
-
-        
+        * l'attributo ``Destination``, a indicare l'indirizzo (URI reference) dell'Identity Provider a cui è inviata la richiesta, come risultante nell'attributo entityID presente nel metadata IdP dell'Identity Provider a cui viene inviata la richiesta, o in alternativa l'indirizzo URI del SingleSignOnService a cui si sta inviando la richiesta
         * l'attributo ``ForceAuthn`` nel caso in cui si richieda livelli di autenticazione superiori a SpidL1 (SpidL2 o SpidL3)
         * l'attributo ``AssertionConsumerServiceIndex``, riportante un indice posizionale facente riferimento ad uno degli elementi ``<AssertionConsumerService>`` presenti nei metadata del Service Provider, atto ad indicare, mediante l'attributo ``Location``, l'URL a cui inviare il messaggio di risposta alla richiesta di autenticazione, e mediante l'attributo ``Binding``, il binding da utilizzare, quest'ultimo valorizzato obbligatoriamente con ``urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST``. In alternativa all'attributo ``AssertionConsumerServiceIndex`` (scelta sconsigliata) possono essere presenti:
 
@@ -134,7 +129,7 @@ La risposta inviata dall'Identity Provider al Service Provider può essere tras
         * deve essere presente l'attributo ``Version``, che deve valere sempre ``2.0``, coerentemente con la versione della specifica SAML adottata;
         * deve essere presente l'attributo ``IssueInstant`` a indicare l'istante di emissione della risposta, in formato UTC;
         * deve essere presente l'attributo ``InResponseTo``, il cui valore deve fare riferimento all'ID della richiesta a cui si risponde;
-        * deve essere presente l'attributo ``Destination``, a indicare l'indirizzo (``URI`` reference) del Service Provider a cui è inviata la risposta;
+        * deve essere presente l'attributo ``Destination``, a indicare l'indirizzo (``URI`` reference) del Service Provider a cui è inviata la risposta o in alternativa l'indirizzo URI dell'AssertionConsumerService a cui si sta inviando la risposta;
 
     * Deve essere presente l'elemento ``<Status>`` a indicare l'esito della AuthnRequest secondo quanto definito nelle specifiche SAML (SAML-Core, par. 3.2.2.1 e successivi) comprendente il sotto-elemento
 

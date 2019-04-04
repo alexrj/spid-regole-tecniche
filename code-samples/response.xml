@@ -4,7 +4,7 @@
     Version="2.0" 
     InResponseTo="_4d38c302617b5bf98951e65b4cf304711e2166df20" 
     IssueInstant="2015-01-29T10:01:03Z" 
-    Destination="http://spid-sp.it">
+    Destination="http://spid-sp.it/acs">
 	<saml:Issuer NameQualifier="”https://spidIdp.spidIdpProvider.it”
 	    Format=" urn:oasis:names:tc:SAML:2.0:nameid-format:entity">
 		spididp.it 
